@@ -14,8 +14,14 @@ def gameLoop():
         if guess == "quit":
             break
         elif guess == answer:
-            return "\nCongratulations, you've guessed corrctly!"
+            return ("\nCongratulations, you guessed corrctly!")
+            question = input("Do you like that animal? yes or no")
+            if question == "yes":
+                print("Awesome")
+            else:
+                print("I am sorry you do not like this animal.")
         else:
-            print("Wow 5 guesses and you still couldn't get it?")
+             print("That is not it try again.")
+    print("Wow 5 guesses and you still couldn't get it?")
             
 main()
